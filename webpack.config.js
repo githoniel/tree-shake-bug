@@ -6,12 +6,12 @@ module.exports = {
        // main2:'./main2.js'
     },
 	plugins: [
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false
-        //     },
-        //     sourceMap: true
-        // })
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+            sourceMap: true
+        })
 	],
     
     output:{
